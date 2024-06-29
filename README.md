@@ -3,15 +3,15 @@
 CREATE TABLE IF NOT EXISTS peliculas (
   id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
   titulo VARCHAR(45) NOT NULL,
-  sinopsis VARCHAR(255) DEFAULT NULL,
+  sinopsis VARCHAR(255) NULL,
   fecha_de_estreno date NOT NULL,
-  actores VARCHAR(45) DEFAULT NULL,
-  genero VARCHAR(45) DEFAULT NULL,
+  actores VARCHAR(45) NULL,
+  genero VARCHAR(45) NULL,
   director VARCHAR(45) NOT NULL,
   pais VARCHAR(45) NOT NULL,
   duracion INT NOT NULL,
-  poster VARCHAR(255) DEFAULT NULL,
-  trailer VARCHAR(255) DEFAULT NULL,
+  poster VARCHAR(255) NULL,
+  trailer VARCHAR(255) NULL,
 )
 ```
 
