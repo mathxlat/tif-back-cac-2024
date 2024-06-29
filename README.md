@@ -10,4 +10,4 @@ UPDATE peliculas SET id=1;
 
 
 DELETE FROM peliculas WHERE id = '1';
-'
+
