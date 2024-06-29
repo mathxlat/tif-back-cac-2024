@@ -1,7 +1,7 @@
 ```sql 
 #Crear tabla si no existe
 CREATE TABLE IF NOT EXISTS `peliculas` (
-  id INT AUTOINCREMENT PRIMARY KEY NOT NULL,
+  id INT AUTO INCREMENT PRIMARY KEY NOT NULL,
   titulo VARCHAR(45) NOT NULL,
   sinopsis VARCHAR(255) DEFAULT NULL,
   fecha_de_estreno date NOT NULL,
