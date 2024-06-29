@@ -1,4 +1,6 @@
 ```sql 
+
+IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='peliculas' AND xtype='U')
 CREATE TABLE `peliculas` (
   `id` int unsigned NOT NULL,
   `titulo` varchar(45) NOT NULL,
