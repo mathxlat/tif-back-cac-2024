@@ -18,15 +18,15 @@ CREATE TABLE IF NOT EXISTS peliculas (
 
 
 ```sql 
-Saleccionar datos de la tabla
+#Seleccionar datos de la tabla
 SELECT * FROM cacmovies.peliculas;
 ```
 ```sql
-Añadir datos a la tabla
+#Añadir datos a la tabla
 INSERT INTO peliculas (id, titulo, sinopsis, fecha_de_estreno, actores, genero, director, pais, duracion, poster, trailer) VALUES ();
 ```
 ```sql 
-Actualizar datos de la tabla
+#Actualizar datos de la tabla
 UPDATE peliculas
 SET titulo= '',
  sinopsis= '',
@@ -44,6 +44,6 @@ WHERE id= ;
 ```
 
 ```sql 
-Eliminar datos de la tabla
+#Eliminar datos de la tabla
 DELETE FROM peliculas WHERE id = '1';
 ```
