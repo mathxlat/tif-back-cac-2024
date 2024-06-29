@@ -11,8 +11,8 @@ CREATE TABLE `peliculas` (
   `director` varchar(45) NOT NULL,
   `pais` varchar(45) NOT NULL,
   `duracion` int NOT NULL,
-  `poster` varchar(45) DEFAULT NULL,
-  `trailer` varchar(45) DEFAULT NULL,
+  `poster` varchar(255) DEFAULT NULL,
+  `trailer` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `idpeliculas_UNIQUE` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
