@@ -1,17 +1,17 @@
 ```sql 
 #Crear tabla si no existe
-CREATE TABLE IF not exists `peliculas` (
-  id int auto_increment PRIMARY KEY NOT NULL,
-  titulo varchar(45) NOT NULL,
-  sinopsis varchar(255) DEFAULT NULL,
+CREATE TABLE IF NOT EXISTS `peliculas` (
+  id INT auto_increment PRIMARY KEY NOT NULL,
+  titulo VARCHAR(45) NOT NULL,
+  sinopsis VARCHAR(255) DEFAULT NULL,
   fecha_de_estreno date NOT NULL,
-  actores varchar(45) DEFAULT NULL,
-  genero varchar(45) DEFAULT NULL,
-  director varchar(45) NOT NULL,
-  pais varchar(45) NOT NULL,
-  duracion int NOT NULL,
-  poster varchar(255) DEFAULT NULL,
-  trailer varchar(255) DEFAULT NULL,
+  actores VARCHAR(45) DEFAULT NULL,
+  genero VARCHAR(45) DEFAULT NULL,
+  director VARCHAR(45) NOT NULL,
+  pais VARCHAR(45) NOT NULL,
+  duracion INT NOT NULL,
+  poster VARCHAR(255) DEFAULT NULL,
+  trailer VARCHAR(255) DEFAULT NULL,
 )
 ```
 
