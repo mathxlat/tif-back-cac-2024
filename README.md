@@ -24,7 +24,9 @@ SELECT * FROM cacmovies.peliculas;
 ```
 ```sql
 Añadir datos a la tabla
-INSERT INTO peliculas (id, titulo, sinopsis, fecha_de_estreno, actores, genero, director, pais, duracion, poster, trailer) VALUES ();
+INSERT INTO peliculas (
+id, titulo, sinopsis, fecha_de_estreno, actores, genero, director, pais, duracion, poster, trailer
+) VALUES ();
 ```
 ```sql 
 Actualizar datos de la tabla
