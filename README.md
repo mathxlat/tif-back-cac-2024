@@ -1,7 +1,6 @@
 ```sql 
 #Crear tabla si no existe
-IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='peliculas' AND xtype='U')
-CREATE TABLE `peliculas` (
+CREATE TABLE IF NOT EXISTS `peliculas` (
   `id` int unsigned NOT NULL,
   `titulo` varchar(45) NOT NULL,
   `sinopsis` varchar(255) DEFAULT NULL,
