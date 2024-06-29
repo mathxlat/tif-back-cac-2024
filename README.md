@@ -10,7 +10,7 @@ CREATE TABLE `peliculas` (
   `genero` varchar(45) DEFAULT NULL,
   `director` varchar(45) NOT NULL,
   `pais` varchar(45) NOT NULL,
-  `duracion` time NOT NULL,
+  `duracion` int NOT NULL,
   `poster` varchar(45) DEFAULT NULL,
   `trailer` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`),
