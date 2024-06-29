@@ -4,7 +4,7 @@ IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='peliculas' AND xtype='U')
 CREATE TABLE `peliculas` (
   `id` int unsigned NOT NULL,
   `titulo` varchar(45) NOT NULL,
-  `sinopsis` varchar(45) DEFAULT NULL,
+  `sinopsis` varchar(255) DEFAULT NULL,
   `fecha_de_estreno` date NOT NULL,
   `actores` varchar(45) DEFAULT NULL,
   `genero` varchar(45) DEFAULT NULL,
