@@ -27,19 +27,18 @@ INSERT INTO peliculas (id, titulo, sinopsis, fecha_de_estreno, actores, genero, 
 ```
 ```sql 
 Actualizar datos de la tabla
-UPDATE peliculas SET
- titulo= ,
- sinopsis= ,
- fecha_de_estreno= ,
- actores= ,
- genero= ,
- director= ,
- pais= ,
- duracion= ,
- poster= ,
- trailer=
-WHERE id=
-
+UPDATE peliculas
+SET titulo= '',
+ sinopsis= '',
+ fecha_de_estreno= '',
+ actores= '',
+ genero= '',
+ director= '',
+ pais= '',
+ duracion= '',
+ poster= '',
+ trailer= ''
+WHERE id= ;
 
 
 ```
