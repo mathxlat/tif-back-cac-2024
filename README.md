@@ -1,19 +1,17 @@
 ```sql 
 #Crear tabla si no existe
 CREATE TABLE IF NOT EXISTS `peliculas` (
-  `id` int AUTO INCREMENT PRIMARY KEY NOT NULL,
-  `titulo` varchar(45) NOT NULL,
-  `sinopsis` varchar(255) DEFAULT NULL,
-  `fecha_de_estreno` date NOT NULL,
-  `actores` varchar(45) DEFAULT NULL,
-  `genero` varchar(45) DEFAULT NULL,
-  `director` varchar(45) NOT NULL,
-  `pais` varchar(45) NOT NULL,
-  `duracion` int NOT NULL,
-  `poster` varchar(255) DEFAULT NULL,
-  `trailer` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `idpeliculas_UNIQUE` (`id`)
+  id int AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  titulo varchar(45) NOT NULL,
+  sinopsis varchar(255) DEFAULT NULL,
+  fecha_de_estreno date NOT NULL,
+  actores varchar(45) DEFAULT NULL,
+  genero varchar(45) DEFAULT NULL,
+  director varchar(45) NOT NULL,
+  pais varchar(45) NOT NULL,
+  duracion int NOT NULL,
+  poster varchar(255) DEFAULT NULL,
+  trailer varchar(255) DEFAULT NULL,
 )
 ```
 
