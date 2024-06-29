@@ -1,6 +1,6 @@
 ```sql 
 #Crear tabla si no existe
-CREATE TABLE IF NOT EXISTS `peliculas` (
+CREATE TABLE IF NOT EXISTS peliculas (
   id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
   titulo VARCHAR(45) NOT NULL,
   sinopsis VARCHAR(255) DEFAULT NULL,
