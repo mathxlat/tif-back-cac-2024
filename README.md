@@ -18,7 +18,7 @@ trailer VARCHAR(255) NOT NULL,
 ```
 ### Seleccionar datos de la tabla
 ```sql
-SELECT * FROM cacmovies.peliculas;
+SELECT * FROM peliculas;
 ```
 ### Añadir datos a la tabla
 ```sql
