@@ -44,7 +44,7 @@ class Cartelera:
         return peliculas
 
     def obtener_pelicula(self, id):
-        self.cursor.execute('SELECT * FROM peliculas WHERE id = %s', id)
+        self.cursor.execute('SELECT * FROM peliculas WHERE id = %s', (id,))
         return self.cursor.fetchone()
 
     def agregar_pelicula(self, titulo, sinopsis, fecha_de_estreno, actores, genero, director, pais, duracion, poster, trailer):
@@ -83,6 +83,6 @@ class Cartelera:
         return self.cursor.rowcount > 0
 
     def eliminar_pelicula(self, id):
-        self.cursor.execute('DELETE FROM peliculas WHERE id = %s', id)
+        self.cursor.execute('DELETE FROM peliculas WHERE id = %s', (id,))
         self.db.commit()
         return self.cursor.rowcount > 0
