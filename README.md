@@ -23,7 +23,7 @@ SELECT * FROM peliculas;
 ### Añadir datos a la tabla
 ```sql
 INSERT INTO peliculas (id, titulo, sinopsis, fecha_de_estreno, actores, genero, director, pais, duracion, poster, trailer)
-VALUES (1, 'Deadpool & Wolverine','Get ready for a rollercoaster ride of action, humor, and unexpected twists as Deadpool and Wolverine embark on an epic adventure that will leave a lasting impact on the MCU and its beloved characters.',2024-07-25,'Ryan Reynolds, Hugh Jackman','Action','Shawn Levy','USA','120','https://cdn.marvel.com/content/1x/deadpoolandwolverine_lob_crd_02.jpg','https://www.youtube.com/watch?v=73_1biulkYk');
+VALUES (1, 'Deadpool & Wolverine','Get ready for a rollercoaster ride of action, humor, and unexpected twists as Deadpool and Wolverine embark on an epic adventure that will leave a lasting impact on the MCU and its beloved characters.','2024-07-25','Ryan Reynolds, Hugh Jackman','Action','Shawn Levy','USA',120,'https://cdn.marvel.com/content/1x/deadpoolandwolverine_lob_crd_02.jpg','https://www.youtube.com/watch?v=73_1biulkYk');
 ```
 ### Actualizar datos de la tabla
 ```sql
@@ -35,7 +35,7 @@ actores= 'Dan Stevens, Rebecca Hall, Brian Tyree Henry, Kaylee Hottle, Fala Chen
 genero= 'Ciencia Ficción',
 director= 'Adam Wingard',
 pais= 'Estados Unidos',
-duracion= '115',
+duracion= 115,
 poster= 'poster',
 trailer= 'trailer'
 WHERE id= 1;
@@ -44,7 +44,7 @@ WHERE id= 1;
 ```
 ### Eliminar datos de la tabla
 ```sql
-DELETE FROM peliculas WHERE id = '1';
+DELETE FROM peliculas WHERE id = 1;
 ```
 
 ## API Endpoints
