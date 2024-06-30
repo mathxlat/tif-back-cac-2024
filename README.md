@@ -43,11 +43,11 @@ origen de la Isla Calavera y la enigmática
 rivalidad entre especies, que ha perdurado a lo
 largo de generaciones.',
 fecha_de_estreno= '27/3/2024',
-actores= 'king kong, godzilla',
-genero= 'acciom',
-director= 'alguien',
-pais= 'alguno',
-duracion= '2hs',
+actores= 'Dan Stevens, Rebecca Hall, Brian Tyree Henry, Kaylee Hottle, Fala Chen, Alex Ferns, Rachel House',
+genero= 'Ciencia Ficción',
+director= 'Adam Wingard',
+pais= 'Estados Unidos',
+duracion= '115 minutos',
 poster= 'poster',
 trailer= 'trailer'
 WHERE id= 1;
