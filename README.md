@@ -42,7 +42,7 @@ se revelan, brindando información sobre el
 origen de la Isla Calavera y la enigmática
 rivalidad entre especies, que ha perdurado a lo
 largo de generaciones.',
-fecha_de_estreno= '29/6/2024',
+fecha_de_estreno= '27/3/2024',
 actores= 'king kong, godzilla',
 genero= 'acciom',
 director= 'alguien',
