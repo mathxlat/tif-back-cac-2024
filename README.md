@@ -29,7 +29,7 @@ INSERT INTO peliculas (id, titulo, sinopsis, fecha_de_estreno, actores, genero, 
 UPDATE peliculas
 SET titulo= 'Godzilla y Kong: El nuevo imperio',
 sinopsis= 'Dos enemigos ancestrales se ven obligados a unir sus fuerzas contra un nuevo enemigo En Godzilla x Kong: the new empire, un enemigo ancestral resurge de la oscuridad, decidido a desatar el caos absoluto en el mundo. Ante una amenaza imparable, los legendarios Godzilla y Kong deben dejar de lado su histórica rivalidad y trabajar juntos. Mientras todos se preparan para la batalla, importantes descubrimientos del pasado se revelan, brindando información sobre el origen de la Isla Calavera y la enigmática rivalidad entre especies, que ha perdurado a lo largo de generaciones.',
-fecha_de_estreno= '27/3/2024',
+fecha_de_estreno= '2024-03-27',
 actores= 'Dan Stevens, Rebecca Hall, Brian Tyree Henry, Kaylee Hottle, Fala Chen, Alex Ferns, Rachel House',
 genero= 'Ciencia Ficción',
 director= 'Adam Wingard',
