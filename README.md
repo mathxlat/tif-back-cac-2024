@@ -1,5 +1,6 @@
-#SQL
-##Crear tabla si no existe
+##SQL
+
+###Crear tabla si no existe
 ```sql
 CREATE TABLE IF NOT EXISTS peliculas (
 id INT AUTO_INCREMENT PRIMARY KEY,
@@ -15,15 +16,15 @@ poster VARCHAR(255) NULL,
 trailer VARCHAR(255) NOT NULL,
 )
 ```
-##Seleccionar datos de la tabla
+###Seleccionar datos de la tabla
 ```sql
 SELECT * FROM cacmovies.peliculas;
 ```
-#Añadir datos a la tabla
+###Añadir datos a la tabla
 ```sql
 INSERT INTO peliculas (id, titulo, sinopsis, fecha_de_estreno, actores, genero, director, pais, duracion, poster, trailer) VALUES ();
 ```
-#Actualizar datos de la tabla
+###Actualizar datos de la tabla
 ```sql
 UPDATE peliculas
 SET titulo= 'Godzilla y Kong: El nuevo imperio',
@@ -40,7 +41,7 @@ WHERE id= 1;
 
 
 ```
-#Eliminar datos de la tabla
+###Eliminar datos de la tabla
 ```sql
 DELETE FROM peliculas WHERE id = '1';
 ```
