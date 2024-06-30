@@ -29,15 +29,15 @@ INSERT INTO peliculas (id, titulo, sinopsis, fecha_de_estreno, actores, genero, 
 #Actualizar datos de la tabla
 UPDATE peliculas
 SET titulo= 'Kong',
- sinopsis= 'Kong vs godzilla',
- fecha_de_estreno= '29/6/2024',
- actores= 'king kong, godzilla',
- genero= 'acciom',
- director= 'alguien',
- pais= 'alguno',
- duracion= '2hs',
- poster= 'poster',
- trailer= 'trailer'
+sinopsis= 'Kong vs godzilla',
+fecha_de_estreno= '29/6/2024',
+actores= 'king kong, godzilla',
+genero= 'acciom',
+director= 'alguien',
+pais= 'alguno',
+duracion= '2hs',
+poster= 'poster',
+trailer= 'trailer'
 WHERE id= ;
 
 
