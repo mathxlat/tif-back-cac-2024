@@ -38,7 +38,7 @@ pais= 'alguno',
 duracion= '2hs',
 poster= 'poster',
 trailer= 'trailer'
-WHERE id= ;
+WHERE id= 1;
 
 
 ```
