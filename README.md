@@ -1,4 +1,5 @@
-#Crear tabla si no existe
+#SQL
+##Crear tabla si no existe
 ```sql
 CREATE TABLE IF NOT EXISTS peliculas (
 id INT AUTO_INCREMENT PRIMARY KEY,
@@ -14,7 +15,7 @@ poster VARCHAR(255) NULL,
 trailer VARCHAR(255) NOT NULL,
 )
 ```
-#Seleccionar datos de la tabla
+##Seleccionar datos de la tabla
 ```sql
 SELECT * FROM cacmovies.peliculas;
 ```
@@ -32,7 +33,7 @@ actores= 'Dan Stevens, Rebecca Hall, Brian Tyree Henry, Kaylee Hottle, Fala Chen
 genero= 'Ciencia Ficción',
 director= 'Adam Wingard',
 pais= 'Estados Unidos',
-duracion= '115 minutos',
+duracion= '115',
 poster= 'poster',
 trailer= 'trailer'
 WHERE id= 1;
