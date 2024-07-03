@@ -61,7 +61,7 @@ Respuesta
         "genero": "Action",
         "id": 1,
         "pais": "USA",
-        "poster": "./public/posters/2478693ac166460c829df501ad334e23-deadpoolandwolverine.jpg",
+        "poster": "./static/posters/2478693ac166460c829df501ad334e23-deadpoolandwolverine.jpg",
         "sinopsis": "Get ready for a rollercoaster ride of action, humor, and unexpected twists as Deadpool and Wolverine embark on an epic adventure that will leave a lasting impact on the MCU and its beloved characters.",
         "titulo": "Deadpool & Wolverine",
         "trailer": "https://www.youtube.com/watch?v=73_1biulkYk"
@@ -79,7 +79,7 @@ Respuesta
     "genero": "Action",
     "id": 1,
     "pais": "USA",
-    "poster": "./public/posters/2478693ac166460c829df501ad334e23-deadpoolandwolverine.jpg",
+    "poster": "./static/posters/2478693ac166460c829df501ad334e23-deadpoolandwolverine.jpg",
     "sinopsis": "Get ready for a rollercoaster ride of action, humor, and unexpected twists as Deadpool and Wolverine embark on an epic adventure that will leave a lasting impact on the MCU and its beloved characters.",
     "titulo": "Deadpool & Wolverine",
     "trailer": "https://www.youtube.com/watch?v=73_1biulkYk"
@@ -98,7 +98,7 @@ Body
     "director": "Shawn Levy",
     "pais": "USA",
     "duracion": 120,
-    "poster": "./public/posters/2478693ac166460c829df501ad334e23-deadpoolandwolverine.jpg",
+    "poster": "./static/posters/2478693ac166460c829df501ad334e23-deadpoolandwolverine.jpg",
     "trailer": "https://www.youtube.com/watch?v=73_1biulkYk"
 }
 ```
@@ -122,7 +122,7 @@ Body
     "director": "Shawn Levy",
     "pais": "USA",
     "duracion": 128,
-    "poster": "./public/posters/2478693ac166460c829df501ad334e23-deadpoolandwolverine.jpg",
+    "poster": "./static/posters/2478693ac166460c829df501ad334e23-deadpoolandwolverine.jpg",
     "trailer": "https://www.youtube.com/watch?v=73_1biulkYk"
 }
 ```
