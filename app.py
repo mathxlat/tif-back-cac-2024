@@ -1,13 +1,16 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS
-from Cartelera import Cartelera
 from datetime import date
+from Cartelera import Cartelera
+from GestorDeArchivos import GestorDeArchivos
 
 app = Flask(__name__)
 CORS(app)
 
 cartelera = Cartelera(host='localhost', user='root',
                       password='root', database='cartelera')
+
+gestor_archivos = GestorDeArchivos('./public/posters', {'jpg', 'jpeg', 'png', 'webp'})
 
 
 @app.route('/peliculas', methods=['GET'])
@@ -27,13 +30,16 @@ def agregar_pelicula():
     director = request.form['director']
     pais = request.form['pais']
     duracion = request.form['duracion']
-    poster = request.form['poster']
+    poster = request.files['poster']
     trailer = request.form['trailer']
 
+    ruta_poster = gestor_archivos.generar_ruta_archivo(poster)
+
     id = cartelera.agregar_pelicula(
-        titulo, sinopsis, fecha_de_estreno, actores, genero, director, pais, duracion, poster, trailer)
+        titulo, sinopsis, fecha_de_estreno, actores, genero, director, pais, duracion, ruta_poster, trailer)
 
     if id:
+        gestor_archivos.guardar_archivo(poster, ruta_poster)
         return jsonify({"mensaje": "Película agregada exitosamente", "id": id}), 201
     else:
         return jsonify({"mensaje": "Error al agregar la película"}), 500
@@ -59,14 +65,19 @@ def modificar_pelicula(id):
     nuevo_director = request.form['director']
     nuevo_pais = request.form['pais']
     nueva_duracion = request.form['duracion']
-    nuevo_poster = request.form['poster']
+    nuevo_poster = request.files['poster']
     nuevo_trailer = request.form['trailer']
 
     pelicula = cartelera.obtener_pelicula(id)
 
     if pelicula:
+        nueva_ruta_poster = gestor_archivos.generar_ruta_archivo(nuevo_poster)
+
         if cartelera.modificar_pelicula(id, nuevo_titulo, nueva_sinopsis, nueva_fecha_de_estreno, nuevo_actores,
-                                        nuevo_genero, nuevo_director, nuevo_pais, nueva_duracion, nuevo_poster, nuevo_trailer):
+                                        nuevo_genero, nuevo_director, nuevo_pais, nueva_duracion, nueva_ruta_poster, nuevo_trailer):
+            ruta_poster = pelicula['poster']
+            gestor_archivos.modificar_archivo(
+                nuevo_poster, nueva_ruta_poster, ruta_poster)
             return jsonify({"mensaje": "Película modificada exitosamente"}), 200
         else:
             return jsonify({"mensaje": "Error al modificar la película"}), 500
@@ -79,6 +90,8 @@ def eliminar_pelicula(id):
     pelicula = cartelera.obtener_pelicula(id)
     if pelicula:
         if cartelera.eliminar_pelicula(id):
+            ruta_poster = pelicula['poster']
+            gestor_archivos.eliminar_archivo(ruta_poster)
             return jsonify({"mensaje": "Película eliminada exitosamente"}), 200
         else:
             return jsonify({"mensaje": "Error al eliminar la película"}), 500
