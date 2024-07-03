@@ -10,7 +10,7 @@ CORS(app)
 cartelera = Cartelera(host='localhost', user='root',
                       password='root', database='cartelera')
 
-gestor_archivos = GestorDeArchivos('./public/posters', {'jpg', 'jpeg', 'png', 'webp'})
+gestor_archivos = GestorDeArchivos('./static/posters', {'jpg', 'jpeg', 'png', 'webp'})
 
 
 @app.route('/peliculas', methods=['GET'])
