@@ -1,16 +1,24 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, send_from_directory, url_for
 from flask_cors import CORS
 from datetime import date
 from Cartelera import Cartelera
 from GestorDeArchivos import GestorDeArchivos
 
 app = Flask(__name__)
+app.config['UPLOAD_FOLDER'] = './static/posters'
+
 CORS(app)
 
 cartelera = Cartelera(host='localhost', user='root',
                       password='root', database='cartelera')
 
-gestor_archivos = GestorDeArchivos('./static/posters', {'jpg', 'jpeg', 'png', 'webp'})
+gestor_archivos = GestorDeArchivos(
+    app.config['UPLOAD_FOLDER'], {'jpg', 'jpeg', 'png', 'webp'})
+
+
+@app.route('/peliculas/posters/<path:path>')
+def mostrar_poster(path):
+    return send_from_directory(app.config['UPLOAD_FOLDER'], path)
 
 
 @app.route('/peliculas', methods=['GET'])
