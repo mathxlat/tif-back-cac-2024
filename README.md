@@ -1,3 +1,7 @@
+# Trabajo Integrador Final
+
+Este es un proyecto para la base de datos de una pagina de cine realizada por estudiantes del GRUPO 4 de la Comisión 24182 de CODO a CODO para el curso de Programación FULLSTACK - PYTHON 2024.
+
 ## SQL
 
 ### Crear tabla si no existe
@@ -141,3 +145,17 @@ Respuesta
     "message": "Pelicula eliminada exitosamente"
 }
 ```
+
+## Authors
+
+- [@mathxlat](https://github.com/mathxlat)
+Mathías Latrónico
+
+- [@manusan101](https://github.com/manusan101)
+Manuel Sanchez
+
+- [@LoreCapuano](https://github.com/LoreCapuano)
+Lorena Capuano
+
+- [@paulaavilla](https://github.com/paulaavilla)
+Paula Villagra
