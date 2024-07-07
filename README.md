@@ -2,6 +2,17 @@
 
 Este es un proyecto para la base de datos de una pagina de cine realizada por estudiantes del GRUPO 4 de la Comisión 24182 de CODO a CODO para el curso de Programación FULLSTACK - PYTHON 2024.
 
+## 🔗 Links
+- Sitio Web de la Base de Datos: [Base de datos](https://mathxlat.pythonanywhere.com/peliculas)
+
+
+- Sitio Web Pagina de peliculas: [proyectofinalgrupo4](https://proyectofinalgrupo4.netlify.app/)
+
+## Captura
+
+![Screenshot](Captura-pantalla.jpeg)
+
+
 ## SQL
 
 ### Crear tabla si no existe
