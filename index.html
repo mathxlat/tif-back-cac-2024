@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Tabla de Películas</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Tabla de Películas</h1>
+    <form id="peliculaForm" method="post" action="https://mathxlat.pythonanywhere.com/peliculas" enctype="multipart/form-data">
+        <input type="hidden" id="peliculaId" name="peliculaId">
+        <label for="titulo">Titulo:</label>
+        <input type="text" id="titulo" name="titulo" required>
+        <label for="sinopsis">Sinopsis:</label>
+        <input type="text" id="sinopsis"  name="sinopsis" required>
+        <label for="fecha_de_estreno">Fecha de estreno:</label>
+        <input type="date" id="fecha_de_estreno" name="fecha_de_estreno" required>
+        <label for="actores">Actores:</label>
+        <input type="text" id="actores" name="actores" required>
+        <label for="genero">Genero:</label>
+        <input type="text" id="genero" name="genero" required>
+        <label for="director">Director:</label>
+        <input type="text" id="director" name="director" required>
+        <label for="pais">País:</label>
+        <input type="text" id="pais" name="pais" required>
+        <label for="duracion">Duración:</label>
+        <input type="number" id="duracion" name="duracion" required>
+        <label for="poster">Poster:</label>
+        <input type="file" id="poster" name="poster" required>
+        <label for="trailer">Tráiler:</label>
+        <input type="text" id="trailer" name="trailer" required>
+        <button type="submit">Guardar</button>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Titulo</th>
+                <th>Sinopsis</th>
+                <th>Fecha de estreno</th>
+                <th>Actores</th>
+                <th>Genero</th>
+                <th>Director</th>
+                <th>País</th>
+                <th>Duración</th>
+                <th>Poster</th>
+                <th>Tráiler</th>
+            </tr>
+        </thead>
+        <tbody id="peliculasTable"> </tbody>
+    </table>
+</body>
+</html>
